@@ -1,4 +1,3 @@
-# OOP
 Assignment: User
 Objectives:
 Practice creating a class and making instances from it
@@ -26,3 +25,4 @@ Have the second user make 2 deposits and 2 withdrawals and then display their ba
 Have the third user make 1 deposits and 3 withdrawals and then display their balance
 
 BONUS: Add a transfer_money method; have the first user transfer money to the third user and then print both users' balances
+
