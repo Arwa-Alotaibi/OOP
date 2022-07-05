@@ -6,9 +6,11 @@ class user:
         self.account_balance = 0
     def make_deposit(self, amount):	
         self.account_balance += amount
+        return self
 
     def make_withdrawal(self,amount):
         self.account_balance-=amount
+        return self
 
     def display_user_balance(self):
         print(f" user: {self.name} ,  account balance: {self.account_balance}$")
@@ -16,6 +18,7 @@ class user:
     def transfer_money(self, other_user, amount):
         self.make_withdrawal(amount)
         other_user.make_deposit(amount)
+        return self
 
 #Create 3 instances of the User class
 
@@ -34,13 +37,11 @@ user_1.display_user_balance()
 #Have the second user make 2 deposits and 2 withdrawals and then display their balance
 #2-user2
 print('--instances 2--')
+#Chaining Methods
 
 user_2=user('eman','eman@gmail.com')
-user_2.make_deposit(600)
-user_2.make_deposit(700)
-user_2.make_withdrawal(400)
-user_2.make_withdrawal(200)
-user_2.display_user_balance()
+user_2.make_deposit(600).make_deposit(700).make_withdrawal(400).make_withdrawal(200).display_user_balance()
+#This is called chaining. In order for this to work, each method must return self. By returning self, if we recall how functions work, each method call will now be equal to the instance that called it.
 
 #Have the third user make 1 deposits and 3 withdrawals and then display their balance
 print('--instances 3--')
