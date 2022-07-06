@@ -1,6 +1,8 @@
 Assignment: BankAccount
+
 Objectives
 Practice writing classes
+
 As we continue thinking about our banking application, we realize that it would be more accurate to assign a balance not to the user directly, but that in the real world, users have accounts, and accounts have balances. This gives us the idea that maybe an account is its own class! But as we stated, it is not completely independent of a class; accounts only exist because users open them.
 
 For this assignment, don't worry about putting any user information in the BankAccount class. We'll take care of that in the next lesson!
