@@ -26,3 +26,4 @@ Write the add method and test it by calling it 3 times, with different numbers o
 Write the subtract method and test it by calling it 3 times, with different numbers of arguments each time
 
 Make sure you are able to chain methods as demonstrated above
+  
